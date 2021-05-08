@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-class Comment extends Model { }
+class Workout extends Model { }
 
 Comment.init(
     {
@@ -10,31 +10,25 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        comment_date: {
+        workout_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        comment_content: {
+        workout_type: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        author: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        user_id: {
+        sets: {
             type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id',
-            },
+            allowNull: false,
         },
-        post_id: {
+        reps: {
             type: DataTypes.INTEGER,
-            references: {
-                model: 'post',
-                key: 'id',
-            },
+            allowNull: true,
+        },
+        duration: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
         }
     },
     {
@@ -42,8 +36,8 @@ Comment.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'comment',
+        modelName: 'workout',
     }
 );
 
-module.exports = Comment;
+module.exports = Workout;
