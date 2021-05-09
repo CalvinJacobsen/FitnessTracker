@@ -1,43 +1,34 @@
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
 
-class Workout extends Model { }
-
-Comment.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        workout_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        workout_type: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        sets: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        reps: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
-        duration: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        }
+const WorkoutSchema = new Schema({
+    workoutName: {
+        type: String,
+        trim: true,
+        required: "Enter Name for workout"
     },
-    {
-        sequelize,
-        timestamps: false,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'workout',
+    workoutType: {
+        type: String,
+        trim: true,
+        required: "Enter type of workout"
+    },
+    sets: {
+        type: Number,
+        required: "Enter # of sets",
+        default: 1
+    },
+    reps: {
+        type: Number,
+        required: "Enter # of reps",
+        default: 1
+    },
+    duration: {
+        type: Number,
+        required: "Enter duration or distance"
     }
-);
+});
+
+
+const Workout = mongoose.model("Workout", WorkoutSchema);
 
 module.exports = Workout;
