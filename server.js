@@ -5,10 +5,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-
-const databaseUrl = 'fitness';
-const collections = ["Workout"]
-const WorkoutModel = require("./models/Workouts.js");
+const htmlroutes = require('./routes/htmlroutes')
+const apiroutes = require('./routes/apiroutes')
+app.use(htmlroutes)
+app.use(apiroutes)
 
 app.use(logger("dev"));
 

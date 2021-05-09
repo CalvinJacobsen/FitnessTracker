@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const db = require("../models")
 
-
 router.get("/api/workouts", (req, res) => {
     db.Workout.aggregate([
         {
@@ -11,7 +10,7 @@ router.get("/api/workouts", (req, res) => {
         },
     ])
     .then(workout => {
-        console.log("workout workout " + workout);
+        console.log("Workout: " + workout);
         res.json(workout);
     })
     .catch(err => {
