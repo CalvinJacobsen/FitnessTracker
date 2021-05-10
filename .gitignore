@@ -1,6 +1,7 @@
 # Logs
 /node_modules
-.env
+/.env
+/package-lock.json
 logs
 *.log
 npm-debug.log*
