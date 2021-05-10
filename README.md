@@ -1,40 +1,67 @@
-# Unit 17: NoSQL
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# <div align='center'> **Fitness Tracker Application** </div>
 
-## Overview
-In the late 90s and early 2000s, developers began to explore database options that allowed their web applications to handle unstructured data to meet the growing and ever-changing demands of users and address the limitations of the relational model. While these alternative databases existed for decades prior, they didn’t receive the label NoSQL until this time period.  
+<p align="center">
+<img src="assets/main.png" height='300'>
+</p>
 
-The structure of a NoSQL database is something other than a table. There are several different types of NoSQL databases, such as key-value and graph. In this unit we will learn MongoDB, a document-oriented NoSQL database. MongoDB documents correspond to a row, or record, in SQL, but unlike rows, documents are analogous to JSON objects. You can see why MongoDB is a popular choice for Node.js developers! 
+---
+## **Table Of Contents** 
 
-Rather than object-relational mapping, we will implement object-_document_ mapping, or ODM, with Mongoose.js. 
+---
 
-## Key Topics
-* NoSQL
-* MongoDB
-* Object-document mapping
-* Mongoose.js
-* CRUD
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [Review and Contribute](#github)
 
-## Comprehension Check
-You will be employer-ready if you can answer the following questions:
-1. What is the difference between SQL and NoSQL?
-2. What is object-document mapping? 
-3. What is the equivalent of Sequelize associations in Mongoose.js? 
+--- 
 
-## Learning Objectives
-You will be employer-competitive if you are able to:
-* Explain the difference between SQL and NoSQL
-* Configure Heroku for deployment of a Node.js application using MongoDB
-* Explain and execute CRUD methods with MongoDB, using both the  and Mongoose.js
-* Use both a GUI and the Mongo command prompt to interface with a database
-* Integrate Mongoose in a full-stack web application
-* Create query builders to populate documents using refs
+## <div align ='center'> <a name="description"></a> **Description** </div> 
 
-## Homework: Workout Tracker
-Create and deploy full-stack workout tracker application. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+--- 
+<p style="text-align:justify">
+This is an application that uses express, mongoDB and with a semi MVC style system. It was developed to be a useful workout tracker and tool with a visualizer to help users be able to stay motivated and understand their trends and habits. It was developed for Homework 17 "NOSQL" with the context of using MongoDB, a new DB framework instead of MySQL which we had been using recently. In a step to learn the MERN style development for websites popular in the industry today, this was the first application using the tool 'Mongo', in efforts to complete the quadfecta. Please feel free to use the app as much as you'd like. ENJOY!
+</p>
 
-## Helpful Links
-* [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
-* [MongoDB Website](https://www.mongodb.com/)
-* [Robo 3T Website](https://robomongo.org/download)
-* [MongoJS Documentation](https://www.npmjs.com/package/mongojs)
-* [Mongoose Documentation](http://mongoosejs.com/docs/guide.html)
+--- 
+ 
+## <div align ='center'> <a name="installation"></a> **Installation** </div>
+--- 
+<p style="text-align:justify">
+ In order to install this application via github in order to keep track of your own workouts, you can clone the repo then run "$npm init". After installing the necessary packages, run "$node server.js". The app will start on localhost:3000, go to that URL and you will see the application has started. If you would like a seed for the application you can run "$npm run seed" which will insert preloaded data into the mongo database.
+</p>
+
+--- 
+
+## <div align ='center'> <a name="usage"></a> **Usage** </div>
+
+--- 
+<br>
+<p align="center">
+<img src="assets/dashboard.png" width="450">
+</p>
+<p style="font-size:1.1em; text-align:justify">
+The main page that you will be introduced to includes useful information such as the date of your last workout, the total duration, the number of exercises performed among other information about that workout. Using the application involves two processes, either continuing a current workout, or creating a new workout.</p><br>
+
+<img src="assets/resistance.png" width="350" align="right" style="padding-left:15px;">
+
+<p style="font-size:1.1em; text-align:justify">
+Clicking the new workout button will bring you to a page where you can choose either Resistance or Cardio. Choosing one or the other will give you different options as you can see from the two images on the right (Resistance) and below (Cardio). The two categories give you appropriate options for the workout that you are doing. They will be recorded with the correct records as well. Upon filling out the information for the exercise that you are doing, you can complete the entry or add another entry to your current workout. After completing all the desired forms for your workout, your data will appear on the main page under "Last Workout".
+</p><br>
+
+
+<img src="assets/cardio.png" width="350"  style="float:left;padding-right:10px;">
+<p style="font-size:1.1em; text-align:justify">
+You can view all the other information about your workout and trends on the dashboard (IMG1) displaying all your workouts, frequency and duration. It's a simple and intiuitive application that allows for easy tracking of your lifting and aerobic exercises. I'd say it's quite the catch, and pretty to look at as well! That is all, thanks for checking out my application that I worked really hard on!
+</p>
+
+--- 
+## <div align ='center'> **App and Contact**</div>
+---
+### *Heroku:* [Fitness Tracker]()
+### *Github:* [calvinjacobsen/fitness-tracker](https://github.com/CalvinJacobsen/FitnessTracker)
+### *Email:* Jaco1932@umn.edu
+
+--- 
