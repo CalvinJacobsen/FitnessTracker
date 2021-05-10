@@ -60,7 +60,7 @@ You can view all the other information about your workout and trends on the dash
 --- 
 ## <div align ='center'> **App and Contact**</div>
 ---
-### *Heroku:* [Fitness Tracker]()
+### *Heroku:* [Fitness Tracker](https://thefitbit.herokuapp.com/)
 ### *Github:* [calvinjacobsen/fitness-tracker](https://github.com/CalvinJacobsen/FitnessTracker)
 ### *Email:* Jaco1932@umn.edu
 
