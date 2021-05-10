@@ -19,7 +19,12 @@ router.get("/api/workouts", (req, res) => {
 });
 
 router.get("/api/workouts/range", (req, res) => {
-
+    db.Workout.find({})
+    .then(workout => { res.status(200).json(workout) })
+    .catch((err) => {
+        console.log(err);
+        res.status(400).json(err)
+    });
 });
 
 router.put("/api/workouts/:id", ({ body, params }, res) => {
