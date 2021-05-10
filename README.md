@@ -2,7 +2,7 @@
 # <div align='center'> **Fitness Tracker Application** </div>
 
 <p align="center">
-<img src="assets/main.png" height='300'>
+<img src="assets/main.PNG" height='300'>
 </p>
 
 ---
@@ -40,19 +40,19 @@ This is an application that uses express, mongoDB and with a semi MVC style syst
 --- 
 <br>
 <p align="center">
-<img src="assets/dashboard.png" width="450">
+<img src="assets/dashboard.PNG" width="450">
 </p>
 <p style="font-size:1.1em; text-align:justify">
 The main page that you will be introduced to includes useful information such as the date of your last workout, the total duration, the number of exercises performed among other information about that workout. Using the application involves two processes, either continuing a current workout, or creating a new workout.</p><br>
 
-<img src="assets/resistance.png" width="350" align="right" style="padding-left:15px;">
+<img src="assets/resistance.PNG" width="350" align="right" style="padding-left:15px;">
 
 <p style="font-size:1.1em; text-align:justify">
 Clicking the new workout button will bring you to a page where you can choose either Resistance or Cardio. Choosing one or the other will give you different options as you can see from the two images on the right (Resistance) and below (Cardio). The two categories give you appropriate options for the workout that you are doing. They will be recorded with the correct records as well. Upon filling out the information for the exercise that you are doing, you can complete the entry or add another entry to your current workout. After completing all the desired forms for your workout, your data will appear on the main page under "Last Workout".
 </p><br>
 
 
-<img src="assets/cardio.png" width="350"  style="float:left;padding-right:10px;">
+<img src="assets/cardio.PNG" width="350"  style="float:left;padding-right:10px;">
 <p style="font-size:1.1em; text-align:justify">
 You can view all the other information about your workout and trends on the dashboard (IMG1) displaying all your workouts, frequency and duration. It's a simple and intiuitive application that allows for easy tracking of your lifting and aerobic exercises. I'd say it's quite the catch, and pretty to look at as well! That is all, thanks for checking out my application that I worked really hard on!
 </p>

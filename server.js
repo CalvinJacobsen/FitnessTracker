@@ -18,7 +18,7 @@ const apiroutes = require('./routes/apiroutes')
 app.use(htmlroutes)
 app.use(apiroutes)
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/thefitbit", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
