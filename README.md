@@ -13,7 +13,7 @@
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [App and Contact](#github)
+4. [App and Contact](#contact)
 
 --- 
 
@@ -57,7 +57,7 @@ You can view all the other information about your workout and trends on the dash
 </p>
 
 --- 
-## <div align ='center'> **App and Contact**</div>
+## <div align ='center'><a name="contact"></a>  **App and Contact**</div>
 ---
 ### *Heroku:* [Fitness Tracker](https://thefitbit.herokuapp.com/)
 ### *Github:* [calvinjacobsen/fitness-tracker](https://github.com/CalvinJacobsen/FitnessTracker)
