@@ -13,8 +13,7 @@
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [Review and Contribute](#github)
+4. [App and Contact](#github)
 
 --- 
 
